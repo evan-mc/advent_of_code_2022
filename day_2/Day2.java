@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
-public class Day1
+public class Day2
 {
     public static void main(String[] args) throws IOException
     {
@@ -16,7 +16,7 @@ public class Day1
     public static void printProblem1(List<String> lines) {
         System.out.println(lines.stream()
                 .map(str -> str.split(" "))
-                .map(Day1::playProblem1)
+                .map(Day2::playProblem1)
                 .mapToInt(Integer::intValue)
                 .sum()
         );
@@ -25,7 +25,7 @@ public class Day1
     public static void printProblem2(List<String> lines) {
         System.out.println(lines.stream()
                 .map(str -> str.split(" "))
-                .map(Day1::playProblem2)
+                .map(Day2::playProblem2)
                 .mapToInt(Integer::intValue)
                 .sum()
         );
