@@ -79,15 +79,12 @@ public class Day3
    }
 
     /**
-     * returns the point value of a character in ascii form. Switches upper and lower case because the instructions have them
-     * in opposite positions. If the character is lower case, switch it to uppercase and subtract 64 to get the ascii value.
-     * If the character is upper case, switch it to lower case and subtract 64 - 6 (because there are 6 non-alphabetical
-     * values between upper and lower case ascii characters).
+     * returns the point value of a character in ascii form.
      * @param c the upper or lower-case character
      * @return the ascii value associated with the character
      */
    public static int getCharValue(char c) {
        //greater than 90 is lower case, below is upper case
-       return c > 90 ? (Character.toUpperCase(c) - 64) : (Character.toLowerCase(c) - 70);
+       return c > 90 ? (c - 96) : (c - 38);
    }
 }
