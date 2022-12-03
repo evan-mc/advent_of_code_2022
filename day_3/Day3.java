@@ -88,8 +88,6 @@ public class Day3
      */
    public static int getCharValue(char c) {
        //greater than 90 is lower case, below is upper case
-       //return c > 90 ? (Character.toUpperCase(c) - 64) : (Character.toLowerCase(c) - 70);
-       int a = c > 90 ? (Character.toUpperCase(c) - 64) : (Character.toLowerCase(c) - 70);
-       return a;
+       return c > 90 ? (Character.toUpperCase(c) - 64) : (Character.toLowerCase(c) - 70);
    }
 }
